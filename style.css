@@ -127,7 +127,8 @@ header.sticky{
   font-size: var(--h3-font);
 }
 .featured-context{
-  display: grid;
+  display: flex;
+  justify-content: space-around;
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   gap: 1.3rem;
   align-items: center;
@@ -156,5 +157,22 @@ header.sticky{
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: 400;
+}
+.row .arrow{
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+}
+.row .arrow i{
+  height: 35px;
+  width: 35px;
+  background: var(--bg-color);
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--text-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .35s ease;
 }
 
